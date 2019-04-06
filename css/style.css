@@ -1,0 +1,110 @@
+.main{
+  display: flex;
+  height: 100vh;
+   max-width: 1200px;
+  margin: 0px auto;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  flex-flow: column;
+}
+
+.bl{
+  flex: 1 1 200px;
+}
+
+.head,
+.navbar,
+.footer
+{
+  flex-basis: 20px;
+  flex-grow: 0;
+  background: #a90329;
+  color: white;
+}
+
+.navbar{
+  padding: 0;
+}
+
+.footer{
+  text-align: right;
+}
+
+.article
+{
+  flex-grow: 1;
+}
+
+.content{
+  color: white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,ce0433+75,6d0019+100 */
+  background: #a90329; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #a90329 0%, #ce0433 75%, #6d0019 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #a90329 0%,#ce0433 75%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #a90329 0%,#ce0433 75%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.navbar ul{
+  list-style-type: none;
+  display: flex;
+  align-items: stretch;
+  margin: 0px;
+}
+
+.navbar li{
+  padding: 5px 0;
+  margin: 5px 0;
+  flex-basis: 10em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.navbar a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.navbar li:hover,
+.navbar a:hover
+{
+  background-color: #ab5367;
+  color: #ffffffa8;
+}
+
+.navbar a.active:hover{
+  color: white;
+}
+
+.navbar a.active{
+  color: white;
+}
+
+#schedule,
+#about{
+  display: none;
+}
+
+.home-article{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-article .bl{
+   border: 0px;
+}
+
+.home-article .bl.image {
+  flex: 0 0 30%;
+}
+
+.home-article .bl.image img{
+  display: block;
+  margin: auto;
+}
